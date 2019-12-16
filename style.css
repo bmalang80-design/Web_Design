@@ -1,0 +1,73 @@
+:root{
+    color: --font-color = white;
+}
+html{
+    background: rgba(0, 0, 0, .4);
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 16px;
+    color: white;
+}
+header{
+    background-color: #502a33;
+    
+}
+header nav {
+    padding: 0;
+    background-color: rgba(0, 0, 0, .2);    
+    position: relative;
+    width: 100%;
+}
+nav ul{
+padding: 0;
+margin: 0;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li a{
+    display: inline-block;
+    padding: 10px 10px; 
+    width: 125px;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+}
+nav > ul > li{
+    float: left;
+}
+nav ul li:hover {
+  background-color: rgba(0, 0, 0, .5);
+}
+nav::before, nav::after{
+    content: '';
+    display: table;
+}
+nav::after{
+    clear: both;
+}
+/*submenu*/
+nav ul li:hover > ul{
+    display: block;
+}
+nav ul ul {
+display: none;
+position: absolute;
+background-color: #3f2128 ;
+top: 100%;
+}
+/*Last submenu*/
+nav ul ul li{
+    position: relative;
+}
+nav ul ul ul {
+    top: 0;
+    left: 100%;
+}
+nav > ul > li >a{
+    width: auto;
+    padding: 10px 10px;
+}
